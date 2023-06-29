@@ -24,7 +24,7 @@ namespace Microsoft.CognitiveSearch.Skills.Image
             {
                 await blockBlob.UploadFromStreamAsync(stream);
 
-                blockBlob.Properties.ContentType = "image/jpg";
+                blockBlob.Properties.ContentType = "image/jpeg";
                 await blockBlob.SetPropertiesAsync();
             }
 
